@@ -1,0 +1,9 @@
+header {
+    background-color: #0a0908bf;
+    width: 80%;
+    height: 10vw;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
