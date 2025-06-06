@@ -1,0 +1,36 @@
+#on__top {
+    position: fixed;
+    opacity: 0;
+    bottom: 2.5vw;
+    right: 2.5vw;
+    display: none;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 1vw;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1vw #ffffff;
+    font-size: 3.25vw;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#on__top.visible {
+    display: flex;
+    opacity: 1;
+}
+
+#on__top:hover {
+    box-shadow: 0 0 2.5vw #ffffff;
+}
+
+#on__top img {
+    transform: rotate(270deg);
+    width: 2.5vw;
+}

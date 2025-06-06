@@ -1,0 +1,121 @@
+header {
+    background-color: #000000bf;
+    width: 80%;
+    height: 7.5vw;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 0 0 2vw 2vw;
+    display: flex;
+    flex-direction: row;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    align-items: center;
+    z-index: 2;
+}
+
+.header__logo {
+    text-decoration: none;
+    text-align: center;
+    color: #a71d31;
+    font-family: 'Need for Speed';
+    font-size: 2.25vw;
+    margin-left: 2vw;
+    margin-right: auto;
+    border-radius: 1vw;
+    transition: all 0.5s ease-in-out;
+    padding-left: 0.5vw;
+    padding-right: 1vw;
+}
+
+.header__logo:hover {
+    color: #3f0d12;
+    transform: scale(1.15);
+    background-color: #ffffff;
+    box-shadow: 0 0 0.75vw #ffffff;
+}
+
+.header__navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25vw;
+    margin-right: 1.5vw;
+}
+
+.header__navigation a {
+    text-decoration: none;
+    color: #f1f0cc;
+    font-family: 'Balsamiq Sans';
+    transition: all 0.5s ease-in-out;
+    font-size: 1.5vw;
+}
+
+.header__navigation a:hover {
+    color: #d5bf86;
+    text-shadow: 0 0 0.75vw #d5bf86;
+    transform: scale(1.15);
+}
+
+.header__switch {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5vw;
+    gap: 0.25vw;
+}
+
+.header__language {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.25vw;
+    border-radius: 0.25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__language:hover {
+    cursor: pointer;
+}
+
+#active__language {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header__language img {
+    width: 1.5vw;
+    border-radius: 0.15vw;
+}
+
+.header__counter {
+    display: flex;
+    align-items: center;
+    gap: 0.15vw;
+    background-color: #ffffff;
+    height: 1.75vw;
+    padding: 0 1vw 0 0.5vw;
+    border-radius: 1vw;
+    margin-right: 1.5vw;
+    box-shadow: 0 0 1vw #ffffff;
+}
+
+.header__counter p {
+    font-family: 'Need for Speed';
+    font-size: 1.75vw;
+    color: #000000
+}
+
+.header__counter img {
+    width: 1vw;
+    animation: counter 2s forwards infinite;
+}
+
+@keyframes counter {
+    25% {
+        transform: scale(1.5);
+    }
+    75% {
+        transform: scale(1);
+    }
+}

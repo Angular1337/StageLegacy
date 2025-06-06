@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Need for Speed Most Wanted';
+	src: url(../fonts/Need\ for\ Speed\ Most\ Wanted.ttf);
+}
+
+@font-face {
+	font-family: 'Need for Speed';
+	src: url(../fonts/Need\ for\ Speed.ttf);
+}
+
+@font-face {
+	font-family: 'Balsamiq Sans';
+	src: url(../fonts/Balsamiq\ Sans.ttf);
+}
+
+@font-face {
+	font-family: 'Grand Theft Auto';
+	src: url(../fonts/Grand\ Theft\ Auto.ttf);
+}
+
+@font-face {
+	font-family: 'Bully';
+	src: url(../fonts/Bully.otf);
+}
+
+@font-face {
+	font-family: 'The Witcher';
+	src: url(../fonts/The\ Witcher.ttf);
+}

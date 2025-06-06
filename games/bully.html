@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bully</title>
+    <link rel="stylesheet" href="../css/index/html.css" />
+    <link rel="stylesheet" href="../css/index/header.css" />
+    <link rel="stylesheet" href="../css/games/need__for__speed__most__wanted/main.css">
+    <link rel="stylesheet" href="../css/index/footer.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/index/on__top.css" />
+    <script src="../js/counter.js" defer></script>
+    <script src="../js/on__top.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../icons/index/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../icons/index/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../icons/index/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../icons/index/site.webmanifest" />
+</head>
+<body>
+    <header>
+      <a href="../index.html" class="header__logo">StageLegacy</a>
+      <div class="header__counter">
+        <img src="../img/index/header/counter.png" alt="" />
+        <p id="counter"></p>
+      </div>
+      <div class="header__switch">
+        <a class="header__language" id="active__language">
+          <img src="../img/index/header/russian.png" alt="" />
+        </a>
+        <a href="../eng/games/bully.html" class="header__language">
+          <img src="../img/index/header/english.png" alt="" />
+        </a>
+      </div>
+    </header>
+    <main>
+        <div class="main__content__top">
+            <p class="main__content__top__name" style="font-family: 'Bully';">Bully</p>
+            <video src="../vid/bully.mp4" muted autoplay loop></video>
+            <p class="main__content__top__text">&emsp;&emsp;Bully также известна как Canis Canem Edit — компьютерная игра в жанре приключенческого боевика с видом от третьего лица и открытым миром, разработанная Rockstar Vancouver и выпущенная Rockstar Games в октябре 2006 года для игровой приставки PlayStation 2.
+
+Всего, помимо оригинального релиза, существует несколько переизданий игры. В 2008 году игра была выпущена для Xbox 360, Wii и PC под названием Bully: Scholarship Edition. В данной редакции игра была значительно переработана — перенесена на новый движок, используются более качественные модели и текстуры; появились новые сюжетные задания и уроки.
+
+В 2012 году первоначальная версия 2006 года была переиздана на PlayStation 3 без изменений в серии «Классика PlayStation 2» (англ. PS2 Classic); в 2016 году она же переиздана на PlayStation 4 (с добавлением системы «трофеев» и более высокого разрешения экрана). В 2016 году как Bully: Anniversary Edition была издана на мобильных устройствах под управлением систем iOS и Android. Этот вариант аналогичен Scholarship Edition, но адаптирован для портативных устройств. Работы по портированию выполнены Grove Street Games.
+
+Игра рассказывает историю подростка Джимми Хопкинса — заядлого хулигана, поменявшего прежде не одну школу. Новый учебный год для Джимми начинается в школе-интернате с весьма скверной репутацией в небольшом американском городке Булворт.</p>
+        </div>
+        <div class="main__content__top__download">Загрузить</div>
+        <div class="main__content__bottom">
+            <div class="review">
+                <img class="review__img" src="../img/users/user__3.jpg" alt="">
+                <p class="review__name">Tea: Сюжетные повороты держат в напряжении.</p>
+                <div class="stars">
+                    <img src="../img/star.png" alt="">
+                    <img  src="../img/star.png" alt="">
+                    <img  src="../img/star.png" alt="">
+                    <img  src="../img/star.png" alt="">
+                    <img  src="../img/star.png" alt="">
+                </div>
+            </div>
+            <div class="review">
+                <img class="review__img" src="../img/users/user__5.jpg" alt="">
+                <p class="review__name">Wacem: Хорошо оптимизирована, работает плавно на разных устройствах.</p>
+                <div class="stars">
+                    <img src="../img/star.png" alt="">
+                    <img  src="../img/star.png" alt="">
+                    <img  src="../img/star.png" alt="">
+                    <img  src="../img/star.png" alt="">
+                    <img  src="../img/star.png" alt="">
+                </div>
+            </div>
+            <div class="review">
+                <img class="review__img" src="../img/users/user__6.jpg" alt="">
+                <p class="review__name">Riangra: Хороший баланс сложности, игра не слишком лёгкая и не слишком сложная.</p>
+                <div class="stars">
+                    <img src="../img/star.png" alt="">
+                    <img  src="../img/star.png" alt="">
+                    <img  src="../img/star.png" alt="">
+                    <img  src="../img/star.png" alt="">
+                    <img  src="../img/star.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+      <div class="footer__content">
+        <div class="footer__content__name">Компания</div>
+        <a href="company.html">О нас</a>
+        <a href="company.html#footer__1">Сотрудничество</a>
+        <a href="">Карта сайта</a>
+      </div>
+      <div class="footer__content">
+        <div class="footer__content__name">Контакты</div>
+        <a href="contacts.html">Электронная почта</a>
+        <div class="footer__content__feedback">
+          <a href="https://t.me/+Tg_n3PD355A2YjUy">
+            <img src="../img/telegram.png" alt="" />
+          </a>
+          <a href="https://vk.me/join/6fHMECe6RB2gn5e_E1ewO8/e9eMmRQkQMNY=">
+            <img src="../img/vk.png" alt="" />
+          </a>
+          <a href="https://steamcommunity.com/id/Angular1337/">
+            <img src="../img/steam.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="footer__content">
+        <div class="footer__content__name">Политика конфиденциальности</div>
+        <a href="privacy__policy.html">Возрастные ограничения</a>
+        <a href="privacy__policy.html#footer__4">Права пользователя</a>
+      </div>
+      <div class="footer__content">
+        <div class="footer__content__name">ЧАВО</div>
+        <a href="faq.html">Откуда берутся репаки?</a>
+        <a href="faq.html#footer__6">Используете ли вы cookies?</a>
+      </div>
+    </footer>
+    <div id="on__top">
+      <img src="../img/on__top.png" alt="" />
+    </div>
+</body>
+</html>

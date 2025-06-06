@@ -1,0 +1,194 @@
+.main__faq {
+    width: 100%;
+    display: flex;
+    height: 27.5vw;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-top: 17.5vw;
+    border-top: solid 0.25vw #ffffff;
+    border-bottom: solid 0.25vw #ffffff;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.main__faq video {
+    width: 100%;
+}
+
+.main__faq p {
+    font-family: 'Balsamiq Sans';
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.25vw;
+    text-align: center;
+    text-shadow: 0 0 1vw #ffffff;
+    opacity: 1;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1vw;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw #000000;
+}
+
+.main__popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7.5vw;
+}
+
+.main__popular__name {
+    font-family: 'Balsamiq Sans';
+    color: #ffffff;
+    font-size: 1.75vw;
+    background-color: #000000bf;
+    padding: 0.5vw 3.5vw 0.5vw 3.5vw;
+    border-radius: 1vw 1vw 0 0;
+    margin-bottom: 0;
+    text-shadow: 0 0 1vw #ffffff;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.main__popular__cards {
+    display: flex;
+    justify-content: center;
+    background-color: #000000bf;
+    flex-wrap: wrap;
+    min-width: 73.3%;
+    max-width: min-content;
+    padding: 2.5vw;
+    gap: 2.5vw;
+    align-content: flex-start;
+    border-radius: 1vw;
+}
+
+.main__popular__card {
+    width: 35vw;
+    height: 20vw;
+    border-radius: 1vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 1vw #000000;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.main__popular__card:hover {
+    transform: scale(1.075);
+}
+
+.main__popular__card__header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    background-color: #000000bf;
+    border-radius: 1vw 1vw 0 0;
+    align-items: center;
+    font-family: 'Need for Speed Most Wanted';
+    font-size: 2vw;
+    color: #ffffff;
+    text-shadow: 0 0 1vw #ffffff;
+}
+
+.main__popular__card__footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+
+.main__popular__card__footer__redirect {
+    margin-bottom: 2.5vw;
+    font-size: 1.5vw;
+    text-align: center;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    background-color: #000000bf;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    border-radius: 0 1vw 1vw 0;
+    text-shadow: 0 0 1vw #ffffff;
+    font-family: 'Balsamiq Sans';
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+.main__popular__card__footer__redirect:hover {
+    padding: 0.5vw 3.5vw;
+    color: #000000;
+    text-shadow: 0 0 1vw #000000;
+    background-color: #ffffffbf;
+    cursor: pointer;
+}
+
+.main__popular__card__footer__year {
+    font-family: 'Need for Speed';
+    color: #ffffff;
+    margin-left: auto;
+    margin-bottom: 2.5vw;
+    font-size: 1.5vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    background-color: #000000bf;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    border-radius: 1vw 0 0 1vw;
+    text-shadow: 0 0 1vw #ffffff;
+    text-align: center;
+}
+
+#card__1 {
+    background-image: url(../../img/index/main/card__1.png);
+}
+
+#card__2 {
+    background-image: url(../../img/index/main/card__2.png);
+}
+
+#card__2 .main__popular__card__header, #card__3 .main__popular__card__header {
+    font-family: 'Grand Theft Auto';
+}
+
+#card__3 {
+    background-image: url(../../img/index/main/card__3.png);
+}
+
+#card__4 {
+    background-image: url(../../img/index/main/card__4.png);
+}
+
+#card__4 .main__popular__card__header {
+    font-family: 'Need for Speed';
+    font-size: 1.5vw;
+}
+
+#card__5 .main__popular__card__header {
+    font-family: 'Bully';
+    font-size: 2.5vw;
+}
+
+#card__5 {
+    background-image: url(../../img/index/main/card__5.png);
+}
+
+#card__6 .main__popular__card__header {
+    font-family: 'The Witcher';
+    font-size: 1.75vw;
+}
+
+#card__6 {
+    background-image: url(../../img/index/main/card__6.png);
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Witcher</title>
+    <link rel="stylesheet" href="../../css/index/html.css" />
+    <link rel="stylesheet" href="../../css/index/header.css" />
+    <link rel="stylesheet" href="../../css/games/need__for__speed__most__wanted/main.css">
+    <link rel="stylesheet" href="../../css/index/footer.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    <link rel="stylesheet" href="../../css/index/on__top.css" />
+    <script src="../../js/counter.js" defer></script>
+    <script src="../../js/on__top.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../icons/index/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../icons/index/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../icons/index/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../icons/index/site.webmanifest" />
+</head>
+<body>
+    <header>
+      <a href="../index.html" class="header__logo">StageLegacy</a>
+      <div class="header__counter">
+        <img src="../../img/index/header/counter.png" alt="" />
+        <p id="counter"></p>
+      </div>
+      <div class="header__switch">
+        <a href="../../games/the__witcher.html" class="header__language">
+          <img src="../../img/index/header/russian.png" alt="" />
+        </a>
+        <a href="" class="header__language" id="active__language">
+          <img src="../../img/index/header/english.png" alt="" />
+        </a>
+      </div>
+    </header>
+    <main>
+        <div class="main__content__top">
+            <p class="main__content__top__name" style="font-family: 'The Witcher';">The Witcher</p>
+            <video src="../../vid/the__witcher.mp4" muted autoplay loop></video>
+            <p class="main__content__top__text">&emsp;&emsp;The Witcher is a computer role—playing game developed by the Polish company CD Projekt RED based on the novel series of the same name by Polish writer Andrzej Sapkowski. The game was released on the Windows platform on October 24, 2007 in Russia, October 26 in Europe, and October 30 in the United States. A version for OS X was released in 2012.
+
+The player controls the protagonist of Sapkovsky's literary world, the witcher Geralt of Rivia. The game takes place after the events of the Witcher saga — barely alive, Geralt falls into amnesia and is forced to relearn his craft. The player restores the main character's lost experience by fighting human opponents and monsters. At the same time, he is faced with a moral choice, on which the future fate of the game world depends. The game faithfully reflects the gloomy atmosphere of the universe of novels, but its plot has not received official support from Sapkovsky.
+
+The development of The Witcher lasted four years. The game uses the Aurora engine from BioWare. The game's release was accompanied by an advertising campaign with a budget of about 19 million zlotys. The game was positively received by critics, who praised its plot, graphics, soundtrack and combat system, but criticized technical errors; most of them were fixed in the "expanded edition" released in September 2008, which also added a new storyline. In 2011, a sequel to the game called The Witcher 2: Assassins of Kings was released. In May 2015, the release of the third part of the series, The Witcher 3: Wild Hunt, took place.
+
+On October 26, 2022, CD Projekt RED announced a remake of the game, being developed entirely from scratch using the Unreal Engine 5.</p>
+        </div>
+        <div class="main__content__top__download">Download</div>
+        <div class="main__content__bottom">
+            <div class="review">
+                <img class="review__img" src="../../img/users/user__7.jpg" alt="">
+                <p class="review__name">Kertow: It's a fascinating world, and I want to explore every corner.</p>
+                <div class="stars">
+                    <img src="../../img/star.png" alt="">
+                    <img  src="../../img/star.png" alt="">
+                    <img  src="../../img/star.png" alt="">
+                    <img  src="../../img/star.png" alt="">
+                    <img  src="../../img/half__star.png" alt="">
+                </div>
+            </div>
+            <div class="review">
+                <img class="review__img" src="../../img/users/user__8.jpg" alt="">
+                <p class="review__name">Kintian: The graphics and atmosphere are excellent, I really liked it.</p>
+                <div class="stars">
+                    <img src="../../img/star.png" alt="">
+                    <img  src="../../img/star.png" alt="">
+                    <img  src="../../img/star.png" alt="">
+                    <img  src="../../img/star.png" alt="">
+                    <img  src="../../img/star.png" alt="">
+                </div>
+            </div>
+            <div class="review">
+                <img class="review__img" src="../../img/users/user__9.jpg" alt="">
+                <p class="review__name">Ckalldeci: Interesting puzzles and tasks.</p>
+                <div class="stars">
+                    <img src="../../img/star.png" alt="">
+                    <img  src="../../img/star.png" alt="">
+                    <img  src="../../img/star.png" alt="">
+                    <img  src="../../img/star.png" alt="">
+                    <img  src="../../img/star.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+      <div class="footer__content">
+        <div class="footer__content__name">Company</div>
+        <a href="../company.html">About us</a>
+        <a href="../company.html#footer__1">Cooperation</a>
+        <a href="">Site map</a>
+      </div>
+      <div class="footer__content">
+        <div class="footer__content__name">Contacts</div>
+        <a href="../contacts.html">Email</a>
+        <div class="footer__content__feedback">
+          <a href="https://t.me/+Tg_n3PD355A2YjUy">
+            <img src="../../img/telegram.png" alt="" />
+          </a>
+          <a href="https://vk.me/join/6fHMECe6RB2gn5e_E1ewO8/e9eMmRQkQMNY=">
+            <img src="../../img/vk.png" alt="" />
+          </a>
+          <a href="https://steamcommunity.com/id/Angular1337/">
+            <img src="../../img/steam.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="footer__content">
+        <div class="footer__content__name">Privacy policy</div>
+        <a href="../privacy__policy.html">Age restrictions</a>
+        <a href="../privacy__policy.html#footer__4">User rights</a>
+      </div>
+      <div class="footer__content">
+        <div class="footer__content__name">FAQ</div>
+        <a href="../faq.html">Where do repacks come from?</a>
+        <a href="../faq.html#footer__6">Do you use cookies?</a>
+      </div>
+    </footer>
+    <div id="on__top">
+      <img src="../../img/on__top.png" alt="" />
+    </div>
+</body>
+</html>
