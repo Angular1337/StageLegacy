@@ -27,3 +27,18 @@
 	font-family: 'The Witcher';
 	src: url(../fonts/The\ Witcher.ttf);
 }
+
+@font-face {
+	font-family: 'Postal 2';
+	src: url(../fonts/Postal__2.ttf);
+}
+
+@font-face {
+	font-family: 'My Summer Car';
+	src: url(../fonts/My\ Summer\ Car.ttf);
+}
+
+@font-face {
+	font-family: 'Dark Souls III';
+	src: url(../fonts/Dark\ Souls\ III.otf);
+}

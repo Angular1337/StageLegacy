@@ -34,11 +34,51 @@
     box-shadow: 0 0 1vw #000000;
 }
 
+.main__themes {
+    margin-top: 7.5vw;
+    display: flex;
+    margin: 0 auto 0 auto;
+    margin-top: 7.5vw;
+    width: max-content;
+    border-radius: 1vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000bf;
+    padding: 1.5vw;
+    gap: 1.5vw;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.theme__button {
+    height: 1.5vw;
+    width: auto;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5vw 2vw 1.5vw 2vw;
+    font-family: 'Balsamiq Sans';
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.theme__button:hover {
+    transform: scale(1.15);
+    color: #ffffff;
+    background-color: #000000;
+    box-shadow: 0 0 1vw #ffffff;
+}
+
 .main__popular {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 7.5vw;
+    margin-top: 1.5vw;
 }
 
 .main__popular__name {
@@ -191,4 +231,41 @@
 
 #card__6 {
     background-image: url(../../img/index/main/card__6.png);
+}
+
+#card__7 {
+    background-image: url(../../img/index/main/card__7.png);
+}
+
+#card__7 .main__popular__card__header {
+    font-family: 'Postal 2';
+    font-size: 1.75vw;
+}
+
+#card__8 {
+    background-image: url(../../img/index/main/card__8.png);
+}
+
+#card__8 .main__popular__card__header {
+    font-family: 'My Summer Car';
+    font-size: 1.5vw;
+}
+
+#card__9 {
+    background-image: url(../../img/index/main/card__9.png);
+}
+
+#card__9 .main__popular__card__header {
+    font-family: 'Dark Souls III';
+    font-size: 1.75vw;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 1vw #ffffff;
 }
