@@ -11,3 +11,90 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+#warning {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.warning__window {
+    width: 45vw;
+    height: 25vw;
+    border-radius: 2vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 0 1vw #fff;
+}
+
+.warning__number {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Balsamiq Sans';
+    font-size: 2.5vw;
+    margin-top: 1.5vw;
+    border: solid 0.25vw;
+    padding: 0.25vw;
+    border-radius: 50%;
+    min-height: 4.155vw;
+    text-shadow: 0 0 0.15vw #000;
+    box-shadow: 0 0 0.5vw #000;
+}
+
+.warning__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Balsamiq Sans';
+    color: #a71d31;
+    text-shadow: 0 0 0.35vw #000;
+    font-size: 2vw;
+    margin-top: -1.5vw;
+}
+
+.warning__text {
+    font-family: 'Balsamiq Sans';
+    font-size: 1vw;
+    margin-top: -1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#warning__button {
+    font-family: 'Balsamiq Sans';
+    font-size: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a71d31;
+    color: #fff;
+    padding: 0.5vw 1vw;
+    border-radius: 1vw;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    transition: all 0.5s ease-in-out;
+}
+
+#warning__button:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 0.5vw #a71d31;
+    cursor: pointer;
+}

@@ -21,3 +21,35 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Скролл
+
+const div = document.getElementById('warning');
+
+if (div) {
+  div.addEventListener('mouseenter', () => {
+    // При наведении — блокируем прокрутку страницы
+    window.addEventListener('wheel', preventScroll, { passive: false });
+  });
+
+  div.addEventListener('mouseleave', () => {
+    // Когда мышь уходит — разрешаем прокрутку снова
+    window.removeEventListener('wheel', preventScroll, { passive: false });
+  });
+}
+
+function preventScroll(event) {
+  event.preventDefault();
+}
+
+
+// Закрытие окна 
+
+document.getElementById('warning__button')?.addEventListener('click', () => {
+  const d = document.getElementById('warning');
+  if (!d) return;
+  window.removeEventListener('wheel', preventScroll, { passive: false });
+  d.style.transition = 'opacity .5s';
+  d.style.opacity = '0';
+  setTimeout(() => d.remove(), 500);
+});
